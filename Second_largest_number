@@ -1,0 +1,11 @@
+lt=list(map(int,input().split()))
+maxi1=lt[0]
+maxi2=lt[0]
+for i in range(1,len(lt)):
+    if(lt[i]>maxi1):
+        maxi2=maxi1
+        maxi1=lt[i]
+        continue
+    if((lt[i]>maxi2) and (lt[i]<maxi1)):
+        maxi2=lt[i]
+print(maxi2)
