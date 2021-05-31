@@ -1,0 +1,22 @@
+# Perfect number is a positive whole number that is equal to sum of its proper divisors.
+
+
+def get_divisors(n):
+    lt=[]
+    for i in range(1,n):
+        if(n%i)==0:
+            lt.append(i)
+    return lt
+def is_perfect(n):
+    if(sum(get_divisors(n))==n):
+        return True
+    else:
+        return False
+def check_perfect_numbers(l):
+    perfect_number=[]
+    for i in l:
+        if(is_perfect(i)):
+            perfect_number.append(i)
+    return perfect_number
+n=list(map(int,input().split()))
+print(check_perfect_numbers(n))
