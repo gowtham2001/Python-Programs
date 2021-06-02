@@ -1,0 +1,8 @@
+def remove_duplicates(string):
+    output=""
+    for c in string:
+        if(c not in output):
+            output=output+c
+    return output
+string=input()
+print(remove_duplicates(string))
