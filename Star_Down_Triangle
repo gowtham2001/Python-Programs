@@ -1,0 +1,10 @@
+star='*'
+space=' '
+n=int(input())
+for i in range(1,n+1):
+    spacecount=n-i
+    for w in range(i):
+        print(space,end='')
+    for k in range(spacecount):
+        print(star,end=' ')
+    print()
