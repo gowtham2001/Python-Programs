@@ -1,0 +1,2 @@
+import pywhatkit as py
+py.sendwhatmsg('+91(mobilenumber)','hello there',14,3)
