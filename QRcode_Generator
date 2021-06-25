@@ -1,0 +1,8 @@
+import  pyqrcode
+import png
+from pyqrcode import QRCode
+s=input('Enter the url to convert it into QRCode')
+m=input('Enter the file name it has to be')
+d=m+'.png'
+url=pyqrcode.create(s)
+url.png(d,scale=8)
