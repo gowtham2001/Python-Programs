@@ -1,0 +1,7 @@
+s=int(input())
+y=int(input())
+temp=s
+s=y
+y=temp
+print(s)
+print(y)
