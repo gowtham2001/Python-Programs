@@ -1,0 +1,5 @@
+from gtts import gTTS
+s=input("enter the text to convert to speech")
+language='en'
+voice=gTTS(text=s,lang=language,slow=False)
+voice.save('heloo.mp3')
