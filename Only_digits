@@ -1,0 +1,10 @@
+def is_digit(input_str):
+    try:
+        int(input_str)
+        return True
+    except ValueError:
+        return False
+
+digit=input('Enter the Digit')
+result = is_digit(digit)
+print(result) 
