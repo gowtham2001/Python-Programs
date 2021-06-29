@@ -1,0 +1,12 @@
+def remove_duplicates_v2(arr):
+    dedupe_arr = []
+
+    for i in arr:
+        if i not in dedupe_arr:
+            dedupe_arr.append(i)
+
+    return dedupe_arr
+
+lt=list(map(int,input('Enter the List').split()))
+result = remove_duplicates_v2(lt)
+print(result)
