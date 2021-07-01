@@ -6,3 +6,4 @@ if test:
    print "Acceptable ip address"
 else:
    print "Unacceptable ip address"
+hostIP=input()
