@@ -1,0 +1,6 @@
+ord() : It coverts the given string of length one, return an integer
+representing the unicode code point of the character.
+ For example, ord(‘a’) returns the integer 97.
+
+c = input("Enter the letter to find ASCII")
+print("The ASCII value of '" + c + "' is", ord(c)
