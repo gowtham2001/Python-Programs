@@ -1,0 +1,10 @@
+def sort_list(list1, list2):
+ 
+    zipped_pairs = zip(list2, list1)
+    newlist=[]
+    for i in sorted(zipped_pairs):
+        newlist.append(i[1])    
+    return newlist
+x = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+y = [ 0,   1,   1,    0,   1,   2,   2,   0,   1]
+print(sort_list(x, y))
