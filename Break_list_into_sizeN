@@ -1,0 +1,13 @@
+/*The yield keyword enables a function to comeback where it left off when it is called again.
+This is the critical difference from a regular function. A regular function cannot comes back where it left off.
+The yield keyword helps a function to remember its state. The yield enables a function
+to suspend and resume while it turns in a value at the time of the suspension of the execution.*/
+
+
+def divide_chunks(l, n):
+    for i in range(0, len(l), n): 
+        yield l[i:i + n]
+n=int(input('Enter the size to break '))
+my_list=list(map(int,input('Enter the list ').split()))  
+x = list(divide_chunks(my_list, n))
+print (x)
