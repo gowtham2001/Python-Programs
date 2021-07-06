@@ -1,0 +1,10 @@
+
+def cumulative(list):
+    new_list=[]
+    j=0
+    for i in range(0,len(list)):
+        j+=list[i]
+        new_list.append(j)
+    return new_list
+lt=list(map(int,input().split()))
+print(cumulative(lt))
