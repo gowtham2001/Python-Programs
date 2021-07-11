@@ -1,0 +1,12 @@
+def returnSum(dict):     
+     sum = 0
+     for i in dict.values():
+           sum = sum + int(i)
+     return sum
+dict1={}
+n=int(input("Enter the size "))
+for i in range(n):
+    key1=input('Enter key ')
+    value=input('Enter value ')
+    dict1[key1]=value
+print("Sum :", returnSum(dict1))
