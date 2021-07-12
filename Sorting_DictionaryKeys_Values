@@ -1,0 +1,12 @@
+n=int(input('Enter the size '))
+test_dict=dict()
+value1=[]
+for i in range(n):
+    key1=input('Enter the key ')
+    value1=list(map(int,input('Enter List ').split()))
+    test_dict[key1]=value1
+print("The original dictionary is : " + str(test_dict))
+res = dict()
+for key in sorted(test_dict):
+    res[key] = sorted(test_dict[key])
+print("The sorted dictionary : " + str(res))
