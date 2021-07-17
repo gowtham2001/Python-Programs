@@ -1,0 +1,7 @@
+def f(n):
+    l=int(input())
+    if(n>1):
+        f(n-1)
+    print(l)
+f(int(input()))
+  
