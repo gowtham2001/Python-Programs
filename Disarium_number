@@ -1,0 +1,14 @@
+import math
+n=int(input())
+count=len(str(n))
+rem=sum=0
+temp=n
+while(temp!=0):
+    rem=temp%10
+    sum=int(sum+math.pow(rem,count))
+    count=count-1
+    temp=temp//10
+if(sum==n):
+    print('yes it is a diasarium no')
+else:
+    print('not a disarium no')
