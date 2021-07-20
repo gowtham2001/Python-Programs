@@ -1,0 +1,29 @@
+r=int(input())
+c=int(input())
+X=[]
+for i in range(r):
+    row=[]
+    for j in range(c):
+        a=int(input())
+        row.append(a)
+    X.append(row)
+for i in range(r):
+    for j in range(c):
+        print(X[i][j],end=' ')
+    print()
+transpose = []
+for j in range(c):
+    row=[]
+    for i in range (r):
+        a=X[i][j]
+        row.append(a)
+    transpose.append(row)
+for i in range(r):
+    for j in range(c):
+        print(transpose[i][j],end=' ')
+    print()
+for i in range(len(X)):  
+   for j in range(len(X[0])):  
+       result[j][i] = X[i][j]  
+for r in result:  
+   print(r) 
